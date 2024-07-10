@@ -5,11 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Portfolio from './Pages/Portfolio';
 import { BrowserRouter, Routes, Route, useNavigate, Outlet, Link } from "react-router-dom";
+import Navbar from './components/navbar';
+import about_me from './Pages/about_me';
+import ctf_creations from './Pages/CTF_creations';
 
 const Index = () =>
   {
     return(
+      
       <div className='Index'>
+      <Navbar /> {/* This line will render the navbar */}
       <div id='about_me' className='sections'> 
       <div className='container'>
         <div className='section-header'><p className='section-title'>About Me:</p></div>

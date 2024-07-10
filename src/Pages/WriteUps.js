@@ -1,7 +1,13 @@
 function write_ups()
 {
     return(
-        <div></div>
+        <div id ="write_ups">
+            <Navbar/>
+            <h1>Write Ups</h1>
+            <p>Hello. This is the part of my website where I store all the write ups I have done throughout the years I've done and 
+                tried hacking. I have ( hopefully ) created a write up form where that is where I write the write ups and place it here. 
+            </p>
+        </div>
     )
 }
 export default write_ups;

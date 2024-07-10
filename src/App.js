@@ -1,21 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
 import Portfolio from './Pages/Portfolio';
 import Index from '.';
-import ReactDOM from "react-dom/client";
-import { BrowserRouter, Routes, Route, useNavigate, Outlet, Link } from "react-router-dom";
-import write_ups from './Pages/WriteUps'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import WriteUpForm from './Pages/WriteUpForm';
+import Navbar from './components/navbar';
+import Ctf_creations from './Pages/CTF_creations';
+import About_me from './Pages/about_me';
+
 function App() {
   return (
+  
   <BrowserRouter>
     <div className="App">
-      
+    
       <Routes>  
         <Route index element={<Index />}/>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
         <Route path='/writeups' element={<write_ups />}/>
         <Route path='/writeupform' element={<WriteUpForm/>}/>
+        <Route path='/ctf' element={<Ctf_creations/>}/>
+        <Route path="/about_me" element={<About_me/>}/>
         <Route path="*" element={<Index/>}/>
       </Routes>
       
