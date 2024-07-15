@@ -1,11 +1,32 @@
 import Navbar from "../components/navbar";
+import "../css/portfolio.css"
+import React, {useState} from 'react';
+//Have the portfolios in cards or grids
+
+
+
+
 function Portfolio()
 {
+    const Grid=()=>{
+        const[expandedItem, setExpandedItem] = useState(null);
+    
+    const handleClick = (index) => {
+        setExpandedItem(index === expandedItem ? null : index);
+    };
+        const handleOutsideClick=(e) =>
+        {
+            if (e.target.className === 'portfolio-continer'){
+                setExpandedItem(null);
+            }
+        }
+    }
     return(
         <div>
             <Navbar/>
             <h1>Portfolio</h1>
             <p>Hello! This is where I place and categorize all of the projects I have done throughout the years</p>
+            <div className="portfolio-container">
             <div className="Portfolios">
             <p className = "project_title"> Automatic Billiard Laser Referee </p>
             <p className="languages_used">C#, Arduino</p>
@@ -71,6 +92,7 @@ function Portfolio()
                 stats. 
             </p>
             <p>https://github.com/TikiTikiPlus/MovieSorting.git</p>
+            </div>
             </div>
         </div>
     )

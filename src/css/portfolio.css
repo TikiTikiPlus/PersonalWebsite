@@ -1,0 +1,23 @@
+.portfolio-container
+{
+    display:inline-grid;
+    column-gap: 50px;
+    width: 70%;
+    max-width: 2500px;
+    grid-template-columns: auto auto auto;
+}
+.Portfolios
+{
+    border: 5px solid burlywood;
+    column-gap: 5px;
+    row-gap: 5px;
+    
+}
+p
+{
+    margin: 10px;
+}
+body
+{
+    margin-top: 100px;
+}

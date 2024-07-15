@@ -6,6 +6,7 @@ import WriteUpForm from './Pages/WriteUpForm';
 import Navbar from './components/navbar';
 import Ctf_creations from './Pages/CTF_creations';
 import About_me from './Pages/about_me';
+import Write_ups from './Pages/WriteUps';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
       <Routes>  
         <Route index element={<Index />}/>
         <Route path='/portfolio' element={<Portfolio/>}></Route>
-        <Route path='/writeups' element={<write_ups />}/>
+        <Route path='/writeups' element={<Write_ups />}/>
         <Route path='/writeupform' element={<WriteUpForm/>}/>
         <Route path='/ctf' element={<Ctf_creations/>}/>
         <Route path="/about_me" element={<About_me/>}/>

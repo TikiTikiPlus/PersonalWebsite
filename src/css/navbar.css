@@ -1,10 +1,11 @@
 .header {
     position: fixed;
-    width: 100%;
+    width: 98%;
     top: 0;
     left: 0;
     background-color: transparent;
     z-index: var(--z-fixed);
+
    }
    
    .nav {

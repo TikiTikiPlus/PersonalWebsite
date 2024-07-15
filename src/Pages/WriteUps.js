@@ -1,4 +1,5 @@
-function write_ups()
+import Navbar from "../components/navbar"
+function Write_ups()
 {
     return(
         <div id ="write_ups">
@@ -10,4 +11,4 @@ function write_ups()
         </div>
     )
 }
-export default write_ups;
+export default Write_ups;
